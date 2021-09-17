@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png'
 const width = Dimensions.get('screen').width;
 
 export default function Basket() {
-    return <>
+    return <>        
         <Image source={topo} style={styles.topo} />
         <Text style={styles.titulo}>Detalhe da cesta</Text>
 
@@ -22,7 +22,6 @@ export default function Basket() {
                 sua cozinha
             </Text>
             <Text style={styles.preco}>R$ 40,00</Text>
-
         </View>
 
     </>
@@ -32,6 +31,7 @@ const styles = StyleSheet.create({
     topo: {
         width: "100%",
         height: 578 / 768 * width,
+        
 
     },    
     titulo: {
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
     nome: {
         color: "#464646",
         fontSize: 26,
-        lineHeight:42,
-        fontWeight: "bold"
+        lineHeight:42,        
+        fontFamily: "MontserratBold"
     },
     fazenda: {
         flexDirection: "row",
@@ -67,7 +67,8 @@ const styles = StyleSheet.create({
     nomeFazenda: {
         fontSize: 16,
         lineHeight:26,
-        marginLeft: 12
+        marginLeft: 12,
+        fontFamily: "MontserratRegular"
         
     },
     descricao: {
